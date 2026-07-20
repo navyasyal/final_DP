@@ -1,0 +1,10 @@
+{
+  "name": "Navya Syal — Cybersecurity Portfolio",
+  "short_name": "N. Syal",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#070A10",
+  "background_color": "#070A10",
+  "display": "standalone"
+}

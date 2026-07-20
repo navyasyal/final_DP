@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-void text-ink font-body antialiased;
+  background-image:
+    radial-gradient(circle, rgba(58,36,24,0.14) 1px, transparent 1px),
+    radial-gradient(circle at 15% 10%, rgba(181,83,60,0.06), transparent 45%),
+    radial-gradient(circle at 85% 5%, rgba(76,136,128,0.06), transparent 40%);
+  background-size: 22px 22px, auto, auto;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(181, 83, 60, 0.22);
+  color: #3a2418;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f4efe4;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8c6a4;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c4ac80;
+}
+
+/* Focus visibility for keyboard nav */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #4c8880;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.section-container {
+  @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+}
+
+.panel {
+  @apply bg-panel border border-line rounded-2xl;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.25em] uppercase text-cyan;
+}
+
+.grid-noise {
+  background-image: linear-gradient(rgba(58, 36, 24, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 36, 24, 0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+/* Custom cursor glow (desktop only, applied via JS-set CSS vars) */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 420px;
+  height: 420px;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(181, 83, 60, 0.08), transparent 70%);
+  transform: translate(calc(var(--x, 0) * 1px - 210px), calc(var(--y, 0) * 1px - 210px));
+  will-change: transform;
+}
+
+.typing-cursor::after {
+  content: "▌";
+  @apply text-cyan animate-blink;
+}
