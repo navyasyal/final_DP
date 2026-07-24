@@ -113,8 +113,10 @@ export const featuredProjects = [
     period: "Independent project",
     tag: "Security Automation",
     description:
-      "Python-based cybersecurity tool that audits passwords against configurable organizational security policies, scoring strength and flagging non-compliant credentials.",
+      "A SOC-style credential auditing dashboard that scans bulk password data against a configurable security policy — flagging weak, reused, and common passwords, scoring strength, and generating exportable compliance reports.",
     features: [
+      "CSV Ingestion",
+      "Interactive results dashboard",
       "Validates password complexity against a configurable JSON policy file",
       "Scores password strength 0–100 and classifies as Weak / Medium / Strong",
       "Detects common and reused passwords via dictionary and duplicate checks",
@@ -122,7 +124,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Regex", "JSON", "CSV"],
     links: {
-      code: "https://github.com/navyasyal/Password-Policy-Compliance-Checker",
+      Website: "https://password-policy-compliance-checker.onrender.com/",
     },
   },
   {
@@ -130,7 +132,7 @@ export const featuredProjects = [
     period: "Independent project",
     tag: "Blue Team",
     description:
-      "Blue Team log-analysis tool that parses SSH authentication logs, geolocates attacker IPs, detects brute-force attacks, and produces an interactive dashboard and PDF security report.",
+      "A SOC-style threat intelligence console for SSH brute-force detection.",
     features: [
       "Parses SSH auth logs and extracts failed login attempts",
       "Performs GeoIP lookups and plots an interactive world attack map with Folium",
@@ -139,7 +141,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Folium", "Matplotlib", "ReportLab", "MITRE ATT&CK"],
     links: {
-      code: "https://github.com/navyasyal/failed-login-geo-mapper",
+      Website: "https://failed-login-geo-mapper.onrender.com/",
     },
   },
   {
@@ -147,7 +149,7 @@ export const featuredProjects = [
     period: "Independent project",
     tag: "Network Recon",
     description:
-      "Multi-threaded TCP port scanner performing fast network reconnaissance with banner grabbing, service detection, and CSV/JSON reporting.",
+      "A full-stack network reconnaissance web application built around a multithreaded TCP port scanner.",
     features: [
       "Multi-threaded TCP port scanning via ThreadPoolExecutor for speed",
       "Grabs service banners and fingerprints common services on open ports",
@@ -156,7 +158,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Socket Programming", "Multithreading", "argparse"],
     links: {
-      code: "https://github.com/navyasyal/python-port-scanner",
+      Website: "https://netrecon.netlify.app/",
     },
   },
   {
