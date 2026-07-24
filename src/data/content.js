@@ -4,6 +4,8 @@
 // Edit this file to update the site; components just render this data.
 // ---------------------------------------------------------------------------
 
+import { link } from "framer-motion/client";
+
 export const profile = {
   name: "Navya Syal",
   initials: "NS",
@@ -124,7 +126,8 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Regex", "JSON", "CSV"],
     links: {
-      Website: "https://password-policy-compliance-checker.onrender.com/",
+      link: "https://password-policy-compliance-checker.onrender.com/",
+      linkLabel: "Website",
     },
   },
   {
@@ -141,7 +144,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Folium", "Matplotlib", "ReportLab", "MITRE ATT&CK"],
     links: {
-      Website: "https://failed-login-geo-mapper.onrender.com/",
+      link: "https://failed-login-geo-mapper.onrender.com/",
     },
   },
   {
