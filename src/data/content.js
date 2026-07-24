@@ -125,10 +125,8 @@ export const featuredProjects = [
       "Generates CSV compliance reports and a plain-text summary report",
     ],
     tech: ["Python 3", "Regex", "JSON", "CSV"],
-    links: {
       link: "https://password-policy-compliance-checker.onrender.com/",
       linkLabel: "Website",
-    },
   },
   {
     name: "Failed Login Geo-Mapper",
