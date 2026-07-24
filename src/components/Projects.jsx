@@ -18,7 +18,7 @@ function normalizeProjects() {
     tech: p.tech,
     bullets: p.features,
     tag: p.tag,
-    links: p.links,
+    links: { Website: p.link},
   }));
 
   const labs = socLabProjects.map((p) => ({

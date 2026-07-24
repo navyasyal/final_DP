@@ -126,7 +126,6 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Regex", "JSON", "CSV"],
       link: "https://password-policy-compliance-checker.onrender.com/",
-      linkLabel: "Website",
   },
   {
     name: "Failed Login Geo-Mapper",
