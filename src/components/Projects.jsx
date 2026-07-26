@@ -141,6 +141,18 @@ export default function Projects() {
                         <FiGithub /> Code
                       </a>
                     )}
+                    
+                    {project.links.live && (
+                    <a
+                      href={project.links.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-ink-dim transition-colors hover:text-cyan"
+                    >
+                      <FiExternalLink /> Live Site
+                      </a>
+                    )}    
+
                     {project.links.codeFrontend && (
                       <a
                         href={project.links.codeFrontend}

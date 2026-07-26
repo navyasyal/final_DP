@@ -125,9 +125,10 @@ export const featuredProjects = [
       "Generates CSV compliance reports and a plain-text summary report",
     ],
     tech: ["Python 3", "Regex", "JSON", "CSV"],
-      link: "https://password-policy-compliance-checker.onrender.com/",
+    links: {  
+    live: "https://password-policy-compliance-checker.onrender.com/",
   },
-  {
+
     name: "Failed Login Geo-Mapper",
     period: "Independent project",
     tag: "Blue Team",
@@ -141,7 +142,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Folium", "Matplotlib", "ReportLab", "MITRE ATT&CK"],
     links: {
-      link: "https://failed-login-geo-mapper.onrender.com/",
+      live: "https://failed-login-geo-mapper.onrender.com/",
     },
   },
   {
@@ -158,7 +159,7 @@ export const featuredProjects = [
     ],
     tech: ["Python 3", "Socket Programming", "Multithreading", "argparse"],
     links: {
-      Website: "https://netrecon.netlify.app/",
+      live: "https://netrecon.netlify.app/",
     },
   },
   {
