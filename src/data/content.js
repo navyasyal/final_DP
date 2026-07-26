@@ -128,7 +128,8 @@ export const featuredProjects = [
     links: {  
     live: "https://password-policy-compliance-checker.onrender.com/",
   },
-
+},
+  {
     name: "Failed Login Geo-Mapper",
     period: "Independent project",
     tag: "Blue Team",
