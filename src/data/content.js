@@ -292,6 +292,16 @@ export const academicProjects = [
 ];
 
 export const certifications = [
+    {
+    name: "ServiceNow Certified System Administrator (CSA)",
+    org: "ServiceNow",
+    year: "2026",
+    link: "/certificates/servicenow-csa.pdf",
+    details: [
+      "Earned ServiceNow CSA certification, demonstrating proficiency in platform navigation, instance configuration, and database security within enterprise ITSM environments",
+      "ServiceNow CSA-certified with applied knowledge of platform security, self-service automation, and data migration/integration — relevant to GRC and ITSM-driven security operations",
+    ],
+  },
   {
     name: "SOC Simulation",
     org: "TryHackMe",
