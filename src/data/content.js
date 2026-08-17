@@ -303,6 +303,16 @@ export const certifications = [
     ],
   },
   {
+    name: "ServiceNow Certified Application Developer (CAD)",
+    org: "ServiceNow",
+    year: "2026",
+    link: "/certificates/servicenow-cad.pdf",
+    details: [
+      "Earned ServiceNow Certified Application Developer (CAD) certification, demonstrating proficiency in designing custom applications, implementing role-based access controls, and configuring automation workflows on the ServiceNow platform",
+      "Certified in application security and access management on ServiceNow (CAD), including scoped application permissions, ACLs, and data-level restrictions — directly applicable to platform hardening and least-privilege enforcement",
+    ],
+  },
+  {
     name: "SOC Simulation",
     org: "TryHackMe",
     year: "2026",
